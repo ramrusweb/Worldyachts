@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C1079538-0304-4FD1-ACB0-3617FA30EB34}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Worldyachts</RootNamespace>
     <AssemblyName>Worldyachts</AssemblyName>
@@ -30,9 +30,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,10 +56,51 @@
     <Compile Include="Model\Sell.cs" />
     <Compile Include="Model\Seller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StartCRM.cs" />
+    <Compile Include="View\Accounts\SignIn\SignInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Accounts\SignIn\SignInForm.Designer.cs">
+      <DependentUpon>SignInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Accounts\SignUp\SignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Accounts\SignUp\SignUpForm.Designer.cs">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controller\" />
-    <Folder Include="View\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Accounts\SignIn\SignInForm.resx">
+      <DependentUpon>SignInForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignInFormMainIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enterImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userConfirmPasswordImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userPasswordImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userLoginImage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

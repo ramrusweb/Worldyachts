@@ -86,6 +86,9 @@
     <EmbeddedResource Include="View\Accounts\SignIn\SignInForm.resx">
       <DependentUpon>SignInForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Accounts\SignUp\SignUpForm.resx">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SignInFormMainIcon.ico" />
@@ -101,6 +104,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\userLoginImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userEmailImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userFirstNameImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userLastNameImage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

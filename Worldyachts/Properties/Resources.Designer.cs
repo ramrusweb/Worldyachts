@@ -93,6 +93,36 @@ namespace Worldyachts.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap userEmailImage {
+            get {
+                object obj = ResourceManager.GetObject("userEmailImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap userFirstNameImage {
+            get {
+                object obj = ResourceManager.GetObject("userFirstNameImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap userLastNameImage {
+            get {
+                object obj = ResourceManager.GetObject("userLastNameImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap userLoginImage {
             get {
                 object obj = ResourceManager.GetObject("userLoginImage", resourceCulture);

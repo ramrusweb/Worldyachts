@@ -30,13 +30,13 @@
         {
             this.signInLoginTextBox = new System.Windows.Forms.TextBox();
             this.signInLoginLabel = new System.Windows.Forms.Label();
-            this.userLoginPictureBox = new System.Windows.Forms.PictureBox();
-            this.userPasswordPictureBox = new System.Windows.Forms.PictureBox();
+            this.signInLoginPictureBox = new System.Windows.Forms.PictureBox();
+            this.signInPasswordPictureBox = new System.Windows.Forms.PictureBox();
             this.signInPasswordLabel = new System.Windows.Forms.Label();
             this.signInPasswordTextBox = new System.Windows.Forms.TextBox();
             this.signInEnterButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.userLoginPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userPasswordPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signInLoginPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signInPasswordPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // signInLoginTextBox
@@ -59,25 +59,25 @@
             this.signInLoginLabel.TabIndex = 1;
             this.signInLoginLabel.Text = "Логин:";
             // 
-            // userLoginPictureBox
+            // signInLoginPictureBox
             // 
-            this.userLoginPictureBox.Image = global::Worldyachts.Properties.Resources.userLoginImage;
-            this.userLoginPictureBox.Location = new System.Drawing.Point(12, 12);
-            this.userLoginPictureBox.Name = "userLoginPictureBox";
-            this.userLoginPictureBox.Size = new System.Drawing.Size(64, 64);
-            this.userLoginPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.userLoginPictureBox.TabIndex = 2;
-            this.userLoginPictureBox.TabStop = false;
+            this.signInLoginPictureBox.Image = global::Worldyachts.Properties.Resources.userLoginImage;
+            this.signInLoginPictureBox.Location = new System.Drawing.Point(12, 12);
+            this.signInLoginPictureBox.Name = "signInLoginPictureBox";
+            this.signInLoginPictureBox.Size = new System.Drawing.Size(64, 64);
+            this.signInLoginPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.signInLoginPictureBox.TabIndex = 2;
+            this.signInLoginPictureBox.TabStop = false;
             // 
-            // userPasswordPictureBox
+            // signInPasswordPictureBox
             // 
-            this.userPasswordPictureBox.Image = global::Worldyachts.Properties.Resources.userPasswordImage;
-            this.userPasswordPictureBox.Location = new System.Drawing.Point(12, 97);
-            this.userPasswordPictureBox.Name = "userPasswordPictureBox";
-            this.userPasswordPictureBox.Size = new System.Drawing.Size(64, 64);
-            this.userPasswordPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.userPasswordPictureBox.TabIndex = 5;
-            this.userPasswordPictureBox.TabStop = false;
+            this.signInPasswordPictureBox.Image = global::Worldyachts.Properties.Resources.userPasswordImage;
+            this.signInPasswordPictureBox.Location = new System.Drawing.Point(12, 97);
+            this.signInPasswordPictureBox.Name = "signInPasswordPictureBox";
+            this.signInPasswordPictureBox.Size = new System.Drawing.Size(64, 64);
+            this.signInPasswordPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.signInPasswordPictureBox.TabIndex = 5;
+            this.signInPasswordPictureBox.TabStop = false;
             // 
             // signInPasswordLabel
             // 
@@ -121,10 +121,10 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(452, 223);
             this.Controls.Add(this.signInEnterButton);
-            this.Controls.Add(this.userPasswordPictureBox);
+            this.Controls.Add(this.signInPasswordPictureBox);
             this.Controls.Add(this.signInPasswordLabel);
             this.Controls.Add(this.signInPasswordTextBox);
-            this.Controls.Add(this.userLoginPictureBox);
+            this.Controls.Add(this.signInLoginPictureBox);
             this.Controls.Add(this.signInLoginLabel);
             this.Controls.Add(this.signInLoginTextBox);
             this.MaximumSize = new System.Drawing.Size(470, 270);
@@ -132,8 +132,8 @@
             this.Name = "SignInForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Авторизация";
-            ((System.ComponentModel.ISupportInitialize)(this.userLoginPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userPasswordPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signInLoginPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signInPasswordPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,8 +143,8 @@
 
         private System.Windows.Forms.TextBox signInLoginTextBox;
         private System.Windows.Forms.Label signInLoginLabel;
-        private System.Windows.Forms.PictureBox userLoginPictureBox;
-        private System.Windows.Forms.PictureBox userPasswordPictureBox;
+        private System.Windows.Forms.PictureBox signInLoginPictureBox;
+        private System.Windows.Forms.PictureBox signInPasswordPictureBox;
         private System.Windows.Forms.Label signInPasswordLabel;
         private System.Windows.Forms.TextBox signInPasswordTextBox;
         private System.Windows.Forms.Button signInEnterButton;

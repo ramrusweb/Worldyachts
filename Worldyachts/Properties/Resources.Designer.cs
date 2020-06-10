@@ -139,5 +139,25 @@ namespace Worldyachts.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap worldyachtsMainScreen_png {
+            get {
+                object obj = ResourceManager.GetObject("worldyachtsMainScreen_png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap worldyachtsMainScreen0 {
+            get {
+                object obj = ResourceManager.GetObject("worldyachtsMainScreen0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
